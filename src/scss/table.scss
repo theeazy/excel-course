@@ -23,8 +23,8 @@
     align-items: center;
     min-width: $info-cell-width;
     height: 100%;
-    background: #f8f9fa;
     border: 1px solid $border-color;
+    background: #f8f9fa;
     border-top: none;
   }
 
@@ -58,6 +58,7 @@
     white-space: nowrap;
     outline: none;
 
+
     &.selected {
       border: none;
       outline: 2px solid $primary-color;
@@ -76,7 +77,6 @@
     &:hover {
       opacity: 1!important;
     }
-
   }
 
   .col-resize {
