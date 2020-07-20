@@ -28,10 +28,10 @@
     }
 
     &:focus {
-      border:  2px solid #1a73e8;
+      border: 2px solid #1a73e8;
     }
-
   }
+
   .button {
     @include button(red);
   }
