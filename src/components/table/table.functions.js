@@ -19,6 +19,7 @@ export function matrix($target, $current) {
     return acc
   }, [])
 }
+
 export function nextSelector(key, {col, row}) {
   const MIN_VALUE = 0
   switch (key) {
@@ -37,5 +38,6 @@ export function nextSelector(key, {col, row}) {
       row = row - 1 < MIN_VALUE ? MIN_VALUE : row - 1
       break
   }
+
   return `[data-id="${row}:${col}"]`
 }
