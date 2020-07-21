@@ -1,5 +1,5 @@
-import {$} from '@core/dom';
-import {ActiveRoute} from '@core/routes/ActiveRoute';
+import {$} from '../dom';
+import {ActiveRoute} from './ActiveRoute';
 
 export class Router {
   constructor(selector, routes) {
@@ -30,7 +30,7 @@ export class Router {
 
     const Page = ActiveRoute.path.includes('excel')
       ? this.routes.excel
-      : this.routes.dashboad
+      : this.routes.dashboard
 
     this.page = new Page(ActiveRoute.param)
 

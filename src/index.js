@@ -4,7 +4,7 @@ import './scss/index.scss'
 import {ExcelPage} from '@/pages/ExcelPage'
 
 new Router('#app', {
-  dashboad: DashboardPage,
+  dashboard: DashboardPage,
   excel: ExcelPage
 })
 
