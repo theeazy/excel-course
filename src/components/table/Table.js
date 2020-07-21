@@ -5,7 +5,7 @@ import {resizeHandler} from '@/components/table/table.resize'
 import {isCell, matrix, nextSelector, shouldResize} from './table.functions'
 import {TableSelection} from '@/components/table/TableSelection'
 import * as actions from '@/redux/actions'
-import {defaultStyles} from '@/constatns'
+import {defaultStyles} from '@/constants'
 import {parse} from '@core/parse'
 
 export class Table extends ExcelComponent {
@@ -45,10 +45,10 @@ export class Table extends ExcelComponent {
 
     this.$on('toolbar:applyStyle', value => {
       this.selection.applyStyle(value)
-      this.$dispatch((actions.applyStyle({
+      this.$dispatch(actions.applyStyle({
         value,
         ids: this.selection.selectedIds
-      })))
+      }))
     })
   }
 
